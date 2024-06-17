@@ -5,6 +5,8 @@ import ChatIcon from '@mui/icons-material/Chat';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { Avatar, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
+import SidebarChat from './SidebarChat';
+
 
 
 
@@ -37,6 +39,9 @@ function Sidebar() {
 
             </div>
             <div className='sidebar_chats'>
+                <SidebarChat addNewChart/>
+                <SidebarChat/>
+                <SidebarChat/>
 
             </div>
         </div>
