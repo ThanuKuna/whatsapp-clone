@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './SidebarChat.css';
 import { Avatar } from '@mui/material';
 
-function SidebarChat({addNewChart}) {
+function SidebarChat({id,name,addNewChart}) {
     const [seed, setSeed] = useState('');
 
     useEffect(() => {
@@ -12,7 +12,7 @@ function SidebarChat({addNewChart}) {
     const createChat = () => {
         const roomName = prompt("Please enter name for chat");
         if(roomName){
-            
+
         }
     };
 
@@ -20,7 +20,7 @@ function SidebarChat({addNewChart}) {
         <div className='sidebarChat'>
             <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} />
             <div className='sidebarChat_info'>
-                <h2>Room Name</h2>
+                <h2>{name}</h2>
                 <p>Last message....</p>
             </div>
         </div>
