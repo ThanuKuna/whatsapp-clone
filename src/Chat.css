@@ -41,7 +41,8 @@
     padding: 30px;
     overflow: scroll;
 }
-.chat_message{
+
+.chat_message {
     position: relative;
     font-size: 16px;
     padding: 10px;
@@ -50,17 +51,51 @@
     width: fit-content;
     margin-bottom: 30px;
 }
-.chat_name{
+
+.chat_name {
     position: absolute;
     top: -15px;
     font-weight: 800;
     font-size: xx-small;
 }
-.chat_timestamp{
+
+.chat_timestamp {
     margin-left: 10px;
     font-size: xx-small;
 }
-.chat_reciever{
+
+.chat_reciever {
     margin-left: auto;
     background-color: #dcf8c6;
+}
+
+.chat_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgray;
+}
+
+.chat_footer>form {
+    flex: 1;
+    display: flex;
+
+}
+
+.chat_footer>form>input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+.chat_footer>form>button {
+
+    display: none;
+}
+
+.chat_footer>.MuiSvgIcon-root {
+    padding: 10px;
+    color: gray;
 }
